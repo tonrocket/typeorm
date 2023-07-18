@@ -1553,7 +1553,7 @@ export abstract class QueryBuilder<Entity extends ObjectLiteral> {
                     parameters: [aliasPath, ...parameters],
                 }
             }
-            // } else if (parameterValue === null) {
+            // } else if (parameterValue === null || parameterValue === undefined) {
             //     return {
             //         operator: "isNull",
             //         parameters: [
